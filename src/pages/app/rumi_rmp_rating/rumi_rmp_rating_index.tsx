@@ -1,8 +1,8 @@
 import ApiTableLong from '@/components/common/ApiTableLong';
-import { rumi_rmp_school_columns } from '@/pages/app/rumi_rmp_school/rumi_rmp_school_column';
+import {rumi_rmp_rating_columns} from "@/pages/app/rumi_rmp_rating/rumi_rmp_rating_column";
 
 export default () => {
-  const from = 'rumi_rmp_school';
+  const from = 'rumi_rmp_rating';
   const beforePageRequest = (params: any, isRecoveryMode?: boolean) => {
     params.idType = 'long';
 
@@ -17,8 +17,7 @@ export default () => {
     params.update_time_type = 'string[]';
     params.update_time_op = 'bt';
 
-    params.nameOp = 'ct';
-    params.countryOp = 'ct';
+    params.comment_op = 'ct';
 
     return params;
   };
@@ -32,7 +31,7 @@ export default () => {
   return (
     <ApiTableLong
       from={from}
-      columns={rumi_rmp_school_columns()}
+      columns={rumi_rmp_rating_columns()}
       beforePageRequest={beforePageRequest}
       beforeCreateRequest={beforeCreateRequest}
     />

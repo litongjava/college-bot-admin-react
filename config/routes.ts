@@ -24,10 +24,40 @@ export default [
         component: './Welcome',
       },
       {
+        path: 'rumi_school_dict',
+        layout: false,
+        name: 'rumi_school_dict',
+        component: './app/rumi_school_dict/rumi_school_dict_index',
+      },
+      {
         path: 'rumi_rmp_school',
         layout: false,
         name: 'rumi_rmp_school',
         component: './app/rumi_rmp_school/rumi_rmp_school_index',
+      },
+      {
+        path: 'rumi_rmp_school_departments',
+        layout: false,
+        name: 'rumi_rmp_school_departments',
+        component: './app/rumi_rmp_school_departments/rumi_rmp_school_departments_index',
+      },
+      {
+        path: 'rumi_rmp_school_rating',
+        layout: false,
+        name: 'rumi_rmp_school_rating',
+        component: './app/rumi_rmp_school_rating/rumi_rmp_school_rating_index',
+      },
+      {
+        path: 'rumi_rmp_professor',
+        layout: false,
+        name: 'rumi_rmp_professor',
+        component: './app/rumi_rmp_professor/rumi_rmp_professor_index',
+      },
+      {
+        path: 'rumi_rmp_rating',
+        layout: false,
+        name: 'rumi_rmp_rating',
+        component: './app/rumi_rmp_rating/rumi_rmp_rating_index',
       },
     ]
   },
