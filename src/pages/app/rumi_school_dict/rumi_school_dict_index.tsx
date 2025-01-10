@@ -12,12 +12,14 @@ export default () => {
       params.deleted = 0;
     }
     params.remarkOp = 'ct';
-    params.orderBy = 'update_time';
+    params.orderBy = 'id';
     params.isAsc = 'false';
     params.update_time_type = 'string[]';
     params.update_time_op = 'bt';
 
     params.name_op = 'ct';
+    params.abbr_name_op = 'ct';
+    params.bot_name_op = 'ct';
     params.professor_names_op = 'ct';
 
     return params;
