@@ -1,5 +1,5 @@
 import ApiTableLong from '@/components/common/ApiTableLong';
-import {rumi_rmp_professor_columns} from "@/pages/app/rumi_rmp_professor/rumi_rmp_professor_column";
+import { rumi_rmp_professor_columns } from '@/pages/app/rumi_rmp_professor/rumi_rmp_professor_column';
 
 export default () => {
   const from = 'rumi_rmp_professor';
@@ -15,6 +15,7 @@ export default () => {
     params.orderBy = 'id';
     params.isAsc = 'true';
     params.update_time_type = 'string[]';
+    params.update_time_to_type = 'ISO8601';
     params.update_time_op = 'bt';
 
     params.comment_op = 'ct';
