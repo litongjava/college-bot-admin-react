@@ -17,6 +17,11 @@ export const rumi_school_dict_columns = (): ProColumns<any>[] => [
     "valueType": "text"
   },
   {
+    "title": "Domain Name",
+    "dataIndex": "domain_name",
+    "valueType": "text"
+  },
+  {
     "title": "Bot Name",
     "dataIndex": "bot_name",
     "valueType": "text"
