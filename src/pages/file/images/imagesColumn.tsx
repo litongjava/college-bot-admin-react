@@ -1,13 +1,12 @@
-import React from 'react';
-import {ProColumns} from '@ant-design/pro-components';
-import UploadPreview from "@/components/common/UploadPreview";
+import { ProColumns } from '@ant-design/pro-components';
+import UploadPreview from '@/components/common/UploadPreview';
 
 export const tio_boot_admin_file_images_columns = (): ProColumns<any>[] => [
   {
-    "title": "Name",
-    "dataIndex": "name",
-    "valueType": "text",
-    formItemProps(form) {
+    title: 'Name',
+    dataIndex: 'name',
+    valueType: 'text',
+    formItemProps() {
       return {
         rules: [
           {
@@ -18,32 +17,27 @@ export const tio_boot_admin_file_images_columns = (): ProColumns<any>[] => [
     },
   },
   {
-    "title": "category",
-    "dataIndex": "category",
-    "valueType": "text",
+    title: 'category',
+    dataIndex: 'category',
+    valueType: 'text',
   },
   {
-    "title": "Files",
-    "dataIndex": "files",
-    "valueType": "text",
-    "hideInForm": true,
+    title: 'Files',
+    dataIndex: 'files',
+    valueType: 'text',
+    hideInForm: true,
     search: false,
-    render: (_, record) => (
-      <UploadPreview
-        listType="picture-circle"
-        fileList={record.files}
-      />
-    ),
+    render: (_, record) => <UploadPreview listType="picture-circle" fileList={record.files} />,
   },
   {
-    "title": "Remark",
-    "dataIndex": "remark",
-    "valueType": "text",
+    title: 'Remark',
+    dataIndex: 'remark',
+    valueType: 'text',
   },
   {
-    "title": "Update Time",
-    "dataIndex": "update_time",
-    valueType: "dateTime",
-    "hideInForm": true
+    title: 'Update Time',
+    dataIndex: 'update_time',
+    valueType: 'dateTime',
+    hideInForm: true,
   },
 ];

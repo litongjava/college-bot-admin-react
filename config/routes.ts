@@ -24,6 +24,12 @@ export default [
         component: './Welcome',
       },
       {
+        path: 'rumi_index_recommends',
+        layout: false,
+        name: 'rumi_index_recommends',
+        component: './app/rumi_index_recommends/rumi_index_recommends_index',
+      },
+      {
         path: 'rumi_school_dict',
         layout: false,
         name: 'rumi_school_dict',
