@@ -65,6 +65,12 @@ export default [
         name: 'rumi_rmp_rating',
         component: './app/rumi_rmp_rating/rumi_rmp_rating_index',
       },
+      {
+        path: 'college_boot_prompt',
+        layout: false,
+        name: 'college_boot_prompt',
+        component: './app/college_boot_prompt/college_boot_prompt_index',
+      },
     ]
   },
   {
