@@ -3,7 +3,7 @@ import ApiTableLong from '@/components/common/ApiTableLong';
 import { college_boot_prompt_columns } from '@/pages/app/college_boot_prompt/college_boot_prompt_column';
 
 export default () => {
-  const from = 'college_boot_prompt';
+  const from = 'llm_chat_prompt';
 
   const beforePageRequest = (params: any, isRecoveryMode?: boolean) => {
     params.idType = 'long';
